@@ -12,19 +12,5 @@ public class AppIntegrationTest
 {
     static App app;
 
-    @BeforeAll
-    static void init()
-    {
-        app = new App();
-        app.connect();
-    }
-
-    @Test
-    void testGetEmployee()
-    {
-        Employee emp = app.getEmployee(255530);
-        assertEquals(emp.emp_no, 255530);
-        assertEquals(emp.first_name, "Ronghao");
-        assertEquals(emp.last_name, "Garigliano");
-    }
+    
 }
