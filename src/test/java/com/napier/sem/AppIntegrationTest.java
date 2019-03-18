@@ -16,7 +16,12 @@ public class AppIntegrationTest
     static void init()
     {
         app = new App();
-
+        app.connect();
     }
 
+    @Test
+    void testGetEmployee()
+    {
+        System.out.println("eat my bum bum");
+    }
 }
